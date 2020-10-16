@@ -38,7 +38,8 @@ export default function CreateOrphanage() {
 
     const data = new FormData()
     data.append('name', name);
-    data.append('position', String(position));
+    data.append('latitude', String(latitude));
+    data.append('longitude', String(longitude));
     data.append('about', about);
     data.append('instructions', instructions);
     data.append('opening_hours', opening_hours);
@@ -82,7 +83,7 @@ export default function CreateOrphanage() {
             <legend>Dados</legend>
 
             <Map 
-              center={[-27.2092052,-49.6401092]} 
+              center={[-23.505709,-46.4296952]} 
               style={{ width: '100%', height: 280 }}
               zoom={15}
               onclick={handleMapClick}
